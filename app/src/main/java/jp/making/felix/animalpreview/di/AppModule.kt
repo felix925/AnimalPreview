@@ -12,6 +12,7 @@ abstract class AppModule {
     @ContributesAndroidInjector
     internal abstract fun contributeMainActivity(): MainActivity
 
+    @ExperimentalStdlibApi
     @ContributesAndroidInjector
     internal abstract fun contributeHomeFragment(): HomeFragment
 

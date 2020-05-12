@@ -6,7 +6,7 @@
     <data>
 
         <variable
-            name="title"
+            name="thumb"
             type="String" />
 
         <variable
@@ -37,8 +37,12 @@
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
                     android:contentDescription="desc"
+                    app:imageUrl="@{thumb}"
                     />
-
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{isLiked.toString()}"/>
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>

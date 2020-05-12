@@ -13,6 +13,7 @@ abstract class ViewModelModule {
     internal abstract fun bindViewModelFactory(factory: ViewModelFactory):
             ViewModelProvider.Factory
 
+    @ExperimentalStdlibApi
     @Binds
     @IntoMap
     @ViewModelKey(HomeViewModel::class)
