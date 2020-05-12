@@ -27,6 +27,6 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     }
 
     private fun loadDog() {
-        controller.setData(viewModel.loadDogs(requireContext()))
+        controller.setData(viewModel.loadDogs())
     }
 }

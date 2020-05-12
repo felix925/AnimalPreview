@@ -11,7 +11,7 @@ import javax.inject.Inject
 @ExperimentalStdlibApi
 class HomeViewModel @Inject constructor() : ViewModel() {
 
-    fun loadDogs(context: Context): List<Pair<String, Boolean>> {
+    fun loadDogs(): List<Pair<String, Boolean>> {
         val imageList = listOf(
             "https://images.dog.ceo/breeds/pomeranian/n02112018_354.jpg" to true,
             "https://images.dog.ceo/breeds/appenzeller/n02107908_3155.jpg" to true,
