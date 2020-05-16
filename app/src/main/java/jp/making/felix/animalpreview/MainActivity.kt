@@ -1,8 +1,9 @@
 package jp.making.felix.animalpreview
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import jp.making.felix.animalpreview.viewModel.HomeViewModel
 import javax.inject.Inject
 

@@ -4,6 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import dagger.Binds
 import dagger.Module
+import dagger.Subcomponent
 import dagger.multibindings.IntoMap
 import jp.making.felix.animalpreview.viewModel.HomeViewModel
 
@@ -13,7 +14,6 @@ abstract class ViewModelModule {
     internal abstract fun bindViewModelFactory(factory: ViewModelFactory):
             ViewModelProvider.Factory
 
-    @ExperimentalStdlibApi
     @Binds
     @IntoMap
     @ViewModelKey(HomeViewModel::class)
