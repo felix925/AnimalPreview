@@ -39,10 +39,6 @@
                     android:contentDescription="desc"
                     app:imageUrl="@{thumb}"
                     />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@{isLiked.toString()}"/>
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
