@@ -10,6 +10,7 @@ import javax.inject.Singleton
 @ExperimentalStdlibApi
 @Singleton
 internal class DogRepository: DogDataSource {
+    // TODO: DIする...
     private val connect:Connecter = ConnecterImpl()
     private val dogApi: DogApiService = connect.getApiService()
     override suspend fun getDogs(
